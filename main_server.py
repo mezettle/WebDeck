@@ -1127,6 +1127,7 @@ def get_usage(
     global excluded_disks
     computer_info = {}
     
+    
     # CPU
     if get_all or any(item[0] == 'cpu' for item in asked_devices):
         cpu_percent = psutil.cpu_percent()
@@ -1871,6 +1872,16 @@ def send_data(message=None):
         hotkey = message.replace("/hotkey", "", 1).strip().split(",")
         print(hotkey)
         keyboard.hotkey(*hotkey)
+        
+    elif message.startswith("/hold"):
+        keys = message.replace("/hold", "", 1).strip().split(",")
+        for key in keys:
+            keyboard2.press(key)
+            
+    elif message.startswith("/release"):
+        keys = message.replace("/release", "", 1).strip().split(",")
+        for key in keys:
+            keyboard2.release(key)
 
     elif message.startswith("/restartexplorer"):
         subprocess.Popen("taskkill /f /im explorer.exe", shell=True)

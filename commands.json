@@ -1304,6 +1304,30 @@
         }
       }
     },
+	"Hold Keys": {
+      "command": "/release",
+      "args": [
+        {
+          "TYPE": "input text",
+          "en": "Comma separated keys to hold together",
+          "ko": "키"
+        }
+      ],
+      "name": {
+        "en": "Keyboard hold",
+        "fr": "Touche du clavier",
+        "ko": "키보드 키"
+      },
+      "style": {
+        "image": "key.png",
+        "image_size": "75%",
+        "name": {
+          "en": "Hold keys",
+          "fr": "Presser la touche",
+          "ko": "키 입력"
+        }
+      }
+    },
     "Write text": {
       "command": "/write",
       "args": [
