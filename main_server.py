@@ -1866,6 +1866,11 @@ def send_data(message=None):
     elif message.startswith("/key"):
         key = message.replace("/key", "", 1).strip()
         keyboard.press(key)
+        
+    elif message.startswith("/hotkey"):
+        hotkey = message.replace("/hotkey", "", 1).strip().split(",")
+        print(hotkey)
+        keyboard.hotkey(*hotkey)
 
     elif message.startswith("/restartexplorer"):
         subprocess.Popen("taskkill /f /im explorer.exe", shell=True)

@@ -1280,6 +1280,30 @@
         }
       }
     },
+	"Press a hotkey": {
+      "command": "/hotkey",
+      "args": [
+        {
+          "TYPE": "input text",
+          "en": "Hotkey",
+          "ko": "키"
+        }
+      ],
+      "name": {
+        "en": "Keyboard hotkey",
+        "fr": "Touche du clavier",
+        "ko": "키보드 키"
+      },
+      "style": {
+        "image": "key.png",
+        "image_size": "75%",
+        "name": {
+          "en": "Press hotkey",
+          "fr": "Presser la touche",
+          "ko": "키 입력"
+        }
+      }
+    },
     "Write text": {
       "command": "/write",
       "args": [

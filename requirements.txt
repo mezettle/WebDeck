@@ -30,3 +30,4 @@ cx_Freeze
 python-vlc
 obs-websocket-py
 pydub
+numpy==1.19.5
