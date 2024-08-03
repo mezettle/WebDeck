@@ -26,7 +26,8 @@ tk
 easygui
 qrcode
 pywebview
-cx_Freeze
+cx_Freeze==6.15.16
 python-vlc
 obs-websocket-py
 pydub
+numpy==1.26.4
